@@ -10,7 +10,8 @@ int main() {
 
     for (;;) {
         printf("Choose Options\n");
-        printf("1:Capture-Image, 2:Apply-Image, 3:ImageIndex, 4:Mount-Image, 5:Unmount-Image, 6:Split-Image, 7:Exit\n");
+        printf("1:Capture-Image, 2:Apply-Image, 3:ImageIndex, 4:Mount-Image, 5:Unmount-Image, 6:Split-Image, 7: RestoreHealth, 8:Exit\n");
+        printf(">");
         scanf("%d", &ch);
 
         if (ch == 1) {
@@ -107,6 +108,9 @@ int main() {
             sprintf(sex, "Dism /Split-Image /ImageFile:%s /SWMFile:%s /FileSize:%d\n", a, b, save);
             printf(system(sex) + "Exited...\n");
         } else if (ch == 7) {
+            sprintf(sex, "dism /online /cleanup-image /restorehealth");
+            printf(system(sex) + "Exited...\n");
+        } else if (ch == 8) {
             break;
         } else {
             printf("Error, Please Choose Options..\n");
