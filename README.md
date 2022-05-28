@@ -5,6 +5,10 @@ But I'm fix it!!!
 
 Please Run to Administrator!!!
 
+Do you want Help?
+
+Go see https://github.com/OwenXP/EasyDISM/wiki/Easydism-Wiki
+
 Funstions:
 
 1.Capture Image
